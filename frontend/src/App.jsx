@@ -684,9 +684,16 @@ export default function App() {
                   </div>
                   <div className="glass-panel metric-card">
                     <div className="metric-card-content">
-                      <span className="metric-label">Failed / Dead Letter</span>
-                      <span className="metric-value" style={{ color: 'var(--accent-red)' }}>{stats.failed_jobs} / {stats.dead_letter_jobs}</span>
-                      <span className="metric-change change-down"><XCircle size={12} /> Failures</span>
+                      <span className="metric-label">Failed Jobs</span>
+                      <span className="metric-value" style={{ color: 'var(--accent-red)' }}>{stats.failed_jobs}</span>
+                      <span className="metric-change change-down"><XCircle size={12} /> Errors</span>
+                    </div>
+                  </div>
+                  <div className="glass-panel metric-card">
+                    <div className="metric-card-content">
+                      <span className="metric-label">Dead Letter Queue</span>
+                      <span className="metric-value" style={{ color: 'var(--accent-yellow)' }}>{stats.dead_letter_jobs}</span>
+                      <span className="metric-change" style={{ color: 'var(--accent-yellow)' }}><ShieldAlert size={12} /> Dead Letters</span>
                     </div>
                   </div>
                 </div>
