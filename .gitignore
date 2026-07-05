@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+*.db
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+.eslintcache
+
+# OS / IDE
+.vscode/
+.idea/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment / local configs
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
